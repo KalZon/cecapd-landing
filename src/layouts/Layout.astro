@@ -1,5 +1,10 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -7,8 +12,12 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body>
-		<slot />
+	<body >
+		<Header />
+		<main class="max-w-5xl px-4 m-auto">
+			<slot />
+		</main>
+		<Footer />
 	</body>
 </html>
 
