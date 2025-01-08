@@ -1,22 +1,25 @@
 ---
 import ArrowRight from "./icons/ArrowRight.astro"
+import HeaderButton from "./HeaderButton.astro"
 ---
 
 <header >
-    <nav class="flex justify-between m-4">
-        <div class="flex items-center">
-            <img src="../assets/cecapdLogo.png" alt="CecapdLogo">
+    <nav class="flex justify-center md:m-4 m-12">
+        <div class="hidden md:flex items-center">
+            <img class="size-24 ml-6 rounded-lg" src="/img/cecapdLogo.png" alt="CecapdLogo">
         </div>
-        <div class="flex justify-center items-center">
-            <ul class="flex fixed gap-x-4">
-                <a href="#principal">Principal</a>
-                <a href="#principal">Archivo</a>
-                <a href="#principal">Pasantias</a>
-                <a href="#principal">Convenios</a>
+        <div class="flex w-full justify-center items-center">
+            <ul class="flex fixed gap-x-4 md:border border-solid border-black backdrop-blur-xl px-6 py-2 rounded-full ">
+                <HeaderButton href="#principal">Principal</HeaderButton>
+                <HeaderButton href="#conocenos">Conocenos</HeaderButton>
+                <HeaderButton href="#pasantias">Pasantías</HeaderButton>
+                <HeaderButton href="#convenios">Convenios</HeaderButton>
             </ul>
         </div>
-        <button class="flex bg-green-400 rounded-md p-2">
-            Contactanos <ArrowRight />
-        </button>
+        <div class="flex items-center">
+            <button class="hidden font-semibold md:flex gap-x-1 bg-green-500 rounded-md px-4 py-2">
+                Contactanos <ArrowRight />
+            </button>
+        </div>
     </nav>
 </header>

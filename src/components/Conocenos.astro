@@ -1,0 +1,25 @@
+---
+import TargetIcon from "./icons/TargetIcon.astro"
+import VisionIcon from "./icons/VisionIcon.astro"
+import Filosofia from "./Filosofia.astro"
+---
+<div id="conocenos" class="text-center mt-5">
+    <h1 class="text-2xl md:text-4xl font-bold mb-8">¿Quiénes somos?</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-5">
+        <article class="flex flex-col items-center shadow-md h-full  py-8">
+            <TargetIcon/>
+            <p class="font-semibold">Visión</p>
+            <p class="w-5/6  mt-2">
+                Desarrollamos capacidades en las personas, para hacerlas competitivas y talentosas en su gestión, para liderar los procesos de cambio en sus instituciones.
+            </p>
+        </article>
+        <article class="flex flex-col items-center mb-5 md:mb-0 shadow-md h-full  py-8">
+            <VisionIcon/>
+            <p class="font-semibold">Misión</p>
+            <p class="w-5/6 mt-2">
+                Buscamos ser la mejor escuela en Capacitación y Actualización Profesional.
+            </p>
+        </article>
+    </div>
+    <Filosofia/>
+</div>

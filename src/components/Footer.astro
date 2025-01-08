@@ -1,1 +1,26 @@
-<footer>Este es el footer</footer>
+---
+import SocialPill from "./SocialPill.astro"
+import FacebookIcon from "./icons/FacebookIcon.astro"
+import MailIcon from "./icons/MailIcon.astro"
+import WhatsappIcon from "./icons/WhatsappIcon.astro"
+---
+<footer>
+    <div class="flex flex-col justify-center items-center p-8">
+        <h1 class="text-3xl font-bold text-center">CECAPD</h1>
+        <div class="flex flex-col md:flex-row gap-5 md:gap-x-5 my-5">
+            <SocialPill href="https://www.facebook.com/CECAPD/photos?locale=es_LA">
+                <FacebookIcon/>
+                cecapdiplomados
+            </SocialPill>
+            <SocialPill href="https://www.facebook.com/CECAPD/photos?locale=es_LA">
+                <MailIcon/>
+                cecapd_diplomados@hotmail.com
+            </SocialPill>
+            <SocialPill href="https://www.facebook.com/CECAPD/photos?locale=es_LA">
+                <WhatsappIcon/>
+                921 728 469
+            </SocialPill>
+        </div>
+        <p>© CECAPD - Todos los derechos reservados.</p>
+    </div>
+</footer>

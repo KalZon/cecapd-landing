@@ -1,4 +1,5 @@
 ---
+import '@fontsource-variable/onest';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
@@ -14,7 +15,7 @@ import Footer from '../components/Footer.astro';
 	</head>
 	<body >
 		<Header />
-		<main class="max-w-5xl px-4 m-auto">
+		<main class="max-w-5xl px-5 m-auto">
 			<slot />
 		</main>
 		<Footer />
@@ -24,6 +25,8 @@ import Footer from '../components/Footer.astro';
 <style>
 	html,
 	body {
+		font-family: "Onest Variable", sans-serif;
+		background-color: azure;
 		margin: 0;
 		width: 100%;
 		height: 100%;
