@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Colegio Mexicano de Abogados Postgraduados",
+        "img": "COMAP.webp"
+    },
+    {
+        "title": "Universidad Mexicana de Ciencias Juridícas y Sociales",
+        "img": "LEX.avif"
+    },
+    {
+        "title": " ACADEMIA MAYOR DE LA LENGUA QUECHUA",
+        "img": "Quechua.webp"
+    },
+    {
+        "title": "UNIVERSIDAD NACIONAL DE TRUJILLO",
+        "img": "UNT.webp"
+    },
+    {
+        "title": "ILUSTRE COLEGIO DE ABOGADOS DEL CALLAO",
+        "img": "abogados_callao.webp"
+    },
+    {
+        "title": "ILUSTRE COLEGIO DE ABOGADOS DEL HUANUCO",
+        "img": "abogados_huanuco.webp"
+    },
+    {
+        "title": "ILUSTRE COLEGIO DE ABOGADOS DEL PASCO",
+        "img": "pascos.webp"
+    },
+    {
+        "title": "Colegio de Economistas de Lima",
+        "img": "economistas.webp"
+    },
+    {
+        "title": "Ilustre Colegio de Abogados de Ica",
+        "img": "Ica.webp"
+    }
+]
