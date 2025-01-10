@@ -1,8 +1,9 @@
 ---
 import ArrowDown from "./icons/ArrowDown.astro"
 import PlaneIcon from "./icons/PlaneIcon.astro"
+const {id} = Astro.props
 ---
-<article class="text-center pt-[110px] pb-10 md:py-[150px] flex flex-col items-center">
+<article id={id} class="text-center pt-[110px] pb-10 md:py-[150px] flex flex-col items-center">
 	<p class="border border-solid rounded-full px-3 py-1 text-sm md:text-md mb-5 text-slate-700 border-black ">Empresa de Capacitación y Certificación académica</p>
 	<h1 class="md:text-5xl text-3xl font-semibold text-wrap">Si no lo intentas, no sabrás a qué punto puedes desarrollar tu potencial</h1>
 	<br>
@@ -12,6 +13,6 @@ import PlaneIcon from "./icons/PlaneIcon.astro"
 
 <style>
 	article{
-		background-image: radial-gradient(rgba(32, 255, 255, 0.781) 10%, rgb(169, 255, 255) 45%, azure 65%);
+		background-image: radial-gradient(rgba(43, 255, 32, 0.781) 10%, rgb(170, 255, 169) 45%, azure 65%);
 	}
 </style>
