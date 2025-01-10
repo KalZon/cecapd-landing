@@ -1,38 +1,56 @@
 [
     {
         "title": "Colegio Mexicano de Abogados Postgraduados",
-        "img": "COMAP.webp"
+        "img": "COMAP.webp",
+        "link": "https://www.comap.org.mx/",
+        "width": "200"
     },
     {
         "title": "Universidad Mexicana de Ciencias Juridícas y Sociales",
-        "img": "LEX.avif"
+        "img": "LEX.avif",
+        "link": "https://www.universidadlex.mx/",
+        "width": "200"
     },
     {
         "title": " ACADEMIA MAYOR DE LA LENGUA QUECHUA",
-        "img": "Quechua.webp"
+        "img": "Quechua.webp",
+        "link": "https://amlq.edu.pe/",
+        "width": "200"
     },
     {
         "title": "UNIVERSIDAD NACIONAL DE TRUJILLO",
-        "img": "UNT.webp"
+        "img": "UNT.webp",
+        "link": "https://www.unitru.edu.pe/",
+        "width": "200"
     },
     {
         "title": "ILUSTRE COLEGIO DE ABOGADOS DEL CALLAO",
-        "img": "abogados_callao.webp"
+        "img": "abogados_callao.webp",
+        "link": "https://www.cac.pe/",
+        "width": "250"
     },
     {
         "title": "ILUSTRE COLEGIO DE ABOGADOS DEL HUANUCO",
-        "img": "abogados_huanuco.webp"
+        "img": "abogados_huanuco.webp",
+        "link": "https://icahuanuco.org/",
+        "width": "250"
     },
     {
         "title": "ILUSTRE COLEGIO DE ABOGADOS DEL PASCO",
-        "img": "pascos.webp"
+        "img": "pascos.webp",
+        "link": "https://www.facebook.com/colegiodeabogadosdepasco/?locale=es_LA",
+        "width": "90"
     },
     {
         "title": "Colegio de Economistas de Lima",
-        "img": "economistas.webp"
+        "img": "economistas.webp",
+        "link": "https://www.cel.org.pe/",
+        "width": "200"
     },
     {
         "title": "Ilustre Colegio de Abogados de Ica",
-        "img": "Ica.webp"
+        "img": "Ica.webp",
+        "link": "https://www.ilustrecai.org/",
+        "width": "200"    
     }
 ]
