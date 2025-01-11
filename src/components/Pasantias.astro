@@ -1,24 +1,63 @@
 ---
-import type { ACTION_ERROR_CODES, ACTION_QUERY_PARAMS } from "astro:actions"
 import PasantiaItem from "./PasantiaItem.astro"
 
 const PASANTIAS =[
+    [//2019, 2020, 2022
+        {
+            title: "Perú - Chile",
+            img: "/img/2019-1.png"
+        },
+        {
+            title: "Perú - Costa Rica",
+            img: "/img/2019-2.png"
+        },
+        {
+            title: "Perú - México",
+            img: "/img/2020-1.png"
+        },
+        {
+            title: "Perú - Colombia",
+            img: "/img/2022-1.png"
+        }
+    ],
+    [//2023
+        {
+            title: "Perú - Costa Rica",
+            img: "/img/2023-1.png"
+        },
+        {
+            title: "Perú - Argentina",
+            img: "/img/2023-2.jpg"
+        },
+        {
+            title: "Perú - Chile",
+            img: "/img/2023-3.png"
+        },
+        {
+            title: "Perú - Colombia",
+            img: "/img/2023-4.png"
+        },
+        {
+            title: "Perú - Chile (II)",
+            img: "/img/2019-1.png"
+        }
+    ],
+    [//2024
     {
-        date: "Febrero 2022",
-        title: "España",
-        description: "Fuimos a España"
-    },
-    {
-        date: "Marzo 2022",
-        title: "España",
-        description: "Fuimos a Tupu"
-    },
-    {
-        date: "Abril 2022",
-        title: "Chile",
-        description: "Fuimos a Chile"
-    }
+            title: "Perú - México",
+            img: "/img/2024-1.webp"
+        },
+        {
+            title: "Perú - Chile",
+            img: "/img/2024-2.png"
+        },
+        {
+            title: "Perú - Chile (II)",
+            img: "/img/2024-3.png"
+        }
+    ]
 ]
+
 ---
 
 <div {...Astro.props}>
@@ -26,13 +65,41 @@ const PASANTIAS =[
     
 </div>
 <section>
-    
+    <h2 class="text-2xl font-extrabold text-gray-900 my-6">2019 - 2022</h2>
     <ol>                  
-        <div class="">
-            <PasantiaItem/>
-            
-        </div>
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-8">
+            {
+                PASANTIAS[0].map(
+                    (pasantia_2019) => (
+                        <PasantiaItem {...pasantia_2019}/>
+                    )
+                )
+            }
+        </section>
     </ol>
-
+    <h2 class="text-2xl font-extrabold text-gray-900 my-6">2023</h2>
+    <ol>
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-8">
+            {
+                PASANTIAS[1].map(
+                    (pasantia_2020) => (
+                        <PasantiaItem {...pasantia_2020}/>
+                    )
+                )
+            }
+        </section>                  
+    </ol>
+    <h2 class="text-2xl font-extrabold text-gray-900 my-6">2024</h2>
+    <ol>
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-8">
+            {
+                PASANTIAS[2].map(
+                    (pasantia_2020) => (
+                        <PasantiaItem {...pasantia_2020}/>
+                    )
+                )
+            }
+        </section>                  
+    </ol>
 
 </section>
