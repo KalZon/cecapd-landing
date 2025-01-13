@@ -1,0 +1,54 @@
+---
+import BackButton from "../../components/BackButton.astro";
+import Footer from "../../components/Footer.astro";
+import pasantias from "../../components/scripts/pasantias"
+
+export async function getStaticPaths() {
+
+  return pasantias.map((pasantia) => ({
+    params: {
+        pasantia: pasantia.id,
+    }
+  }))
+}
+
+const { pasantia } = Astro.params;
+const currentPasantia = pasantias.find((p) => p.id === pasantia)
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/cecapdLogo.webp" />
+    <title>{currentPasantia?.title}</title>
+</head>
+<body>
+    <BackButton/>
+    <main class="max-w-6xl px-5 m-auto">
+        <h1>{pasantia}</h1>
+        <p>
+            {currentPasantia?.description}
+        </p>
+    </main>
+    <Footer/>
+</body>
+</html>
+<style>
+	html,
+	body {
+		font-family: "Onest Variable", sans-serif;
+		background-color: azure;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		scroll-behavior: smooth;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html{
+			scroll-behavior: auto;
+		}
+	}
+
+</style>
