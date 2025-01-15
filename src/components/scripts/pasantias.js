@@ -5,7 +5,7 @@ const pasantias = [
         date: "17 - 22 de Enero",
         description: "Hola desde Chile",
         images: [
-            "img-1", "img-2"
+            "2019-1.webp", "img-2"
         ]
     },
     {
@@ -14,7 +14,7 @@ const pasantias = [
         date: "22 - 29 de Setiembre",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2019-2.webp", "img-2"
         ]
     },
     {
@@ -23,7 +23,7 @@ const pasantias = [
         date: "09 - 16 de Febrero",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2020-1.webp", "img-2"
         ]
     },
     {
@@ -32,7 +32,7 @@ const pasantias = [
         date: "17 - 25 de Setiembre",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2019-1.webp", "img-2"
         ]
     },
     {
