@@ -1,0 +1,27 @@
+---
+import 'photoswipe/style.css';
+const {arrayImages} = Astro.props
+//console.log("Estas son las imagenes: " + arrayImages)
+---
+<div class="grid grid-cols-3 mx-auto py-20 gap-6" id="gallery">
+    {
+        arrayImages.map(
+            (image: string) => (
+                <a class=""  href=`/img/${image}` target="_blank">
+                    <img class="rounded-xl" src=`/img/${image}` alt="">
+                </a>
+            )
+        )
+    }
+</div>
+<script>
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+    
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a',
+        pswpModule: () => import('photoswipe')
+    });
+
+    lightbox.init();
+</script>

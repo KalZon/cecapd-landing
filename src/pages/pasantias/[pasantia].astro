@@ -4,6 +4,8 @@ import BackButton from "../../components/BackButton.astro";
 import Footer from "../../components/Footer.astro";
 import pasantias from "../../components/scripts/pasantias"
 import ClientRouter from "astro/components/ClientRouter.astro";
+import Galeria from "../../components/Galeria.astro";
+import type { ACTION_ERROR_CODES } from "astro:actions";
 
 export async function getStaticPaths() {
 
@@ -16,6 +18,7 @@ export async function getStaticPaths() {
 
 const { pasantia } = Astro.params;
 const currentPasantia = pasantias.find((p) => p.id === pasantia)
+const arrayImages = currentPasantia?.images
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -34,13 +37,7 @@ const currentPasantia = pasantias.find((p) => p.id === pasantia)
         <p>
             {currentPasantia?.description}
         </p>
-        {
-            currentPasantia?.images.map(
-                (img) => (
-                    <img src=`/img/${img}`/>
-                )
-            )
-        }
+        <Galeria {arrayImages}/>
     </main>
     <Footer/>
 </body>

@@ -5,7 +5,7 @@ const pasantias = [
         date: "17 - 22 de Enero",
         description: "Hola desde Chile",
         images: [
-            "2019-1.webp", "img-2"
+            "2019-1.webp", "2019-1.webp"
         ]
     },
     {
@@ -14,7 +14,7 @@ const pasantias = [
         date: "22 - 29 de Setiembre",
         description: "Hola desde Costa Rica",
         images: [
-            "2019-2.webp", "img-2"
+            "2019-2.webp", "2019-1.webp"
         ]
     },
     {
@@ -23,7 +23,7 @@ const pasantias = [
         date: "09 - 16 de Febrero",
         description: "Hola desde Costa Rica",
         images: [
-            "2020-1.webp", "img-2"
+            "2020-1.webp", "2019-1.webp"
         ]
     },
     {
@@ -32,7 +32,7 @@ const pasantias = [
         date: "17 - 25 de Setiembre",
         description: "Hola desde Costa Rica",
         images: [
-            "2019-1.webp", "img-2"
+            "2019-1.webp", "2019-1.webp"
         ]
     },
     {
@@ -41,7 +41,7 @@ const pasantias = [
         date: "18 - 26 de Febrero",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2019-1.webp", "2019-1.webp"
         ]
     },
     {
@@ -50,7 +50,7 @@ const pasantias = [
         date: "20 - 28 de Mayo",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2019-1.webp", "2019-1.webp"
         ]
     },
     {
@@ -59,7 +59,7 @@ const pasantias = [
         date: "05 - 13 de Agosto",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2019-1.webp", "2019-1.webp"
         ]
     },
     {
@@ -68,7 +68,7 @@ const pasantias = [
         date: "23 de Setiembre - 01 de Octubre",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2019-1.webp", "2019-1.webp"
         ]
     },
     {
@@ -77,7 +77,7 @@ const pasantias = [
         date: "02 - 09 de Diciembre",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2019-1.webp", "2019-1.webp"
         ]
     },
     {
@@ -86,7 +86,7 @@ const pasantias = [
         date: "10 - 18 de Febrero",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2019-1.webp", "2019-1.webp"
         ]
     },
     {
@@ -95,7 +95,7 @@ const pasantias = [
         date: "27 - 31 de Mayo",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2019-1.webp", "2019-1.webp"
         ]
     },
     {
@@ -104,7 +104,7 @@ const pasantias = [
         date: "05 - 09 de Agosto",
         description: "Hola desde Costa Rica",
         images: [
-            "img-1", "img-2"
+            "2019-1.webp", "2019-1.webp"
         ]
     }
 
